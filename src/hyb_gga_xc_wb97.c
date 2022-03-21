@@ -13,6 +13,8 @@
 #define XC_HYB_GGA_XC_WB97X_V  466 /* Mardirossian and Head-Gordon             */
 #define XC_HYB_GGA_XC_WB97X_D  471 /* Chai and Head-Gordon                     */
 #define XC_HYB_GGA_XC_WB97X_D3 399 /* Lin et al                                */
+#define XC_HYB_GGA_XC_WB97X_2LP  725  /*Chai and Head-Gordon                   */
+#define XC_HYB_GGA_XC_WB97X_2TQZ 726  /*Chai and Head-Gordon                   */
 
 typedef struct {
   double c_x[5], c_ss[5], c_ab[5];
@@ -78,6 +80,20 @@ static const double par_wb97x_d3[N_PAR] = {
   1.000000, -4.868902,  21.295726, -36.020866, 19.177018,
   1.000000,  2.433266, -15.446008,  17.644390, -8.879494,
   1.0, -(1.0 - 0.195728), 0.25
+};
+
+static const double par_wb97x_2lp[N_PAR] = {
+   2.51767e-01,  1.57375e-00, -5.26624e+00,  6.74313e+00,  0.0,
+   1.15698e+00, -3.31669e+00,  6.27265e+00, -4.51464e+00,  0.0,
+   5.53261e-01, -1.16626e+00,  6.84409e+00, -8.90640e+00,  0.0,
+   1.0, -(1.0 - 0.678792), 0.3
+};
+
+static const double par_wb97x_2tqz[N_PAR] = {
+   3.15503e-01,  1.04772e+00, -2.33506e+00,  3.19909e+00,  0.0,
+   9.08460e-01, -2.80936e+00,  6.02676e+00, -4.56981e+00,  0.0,
+   5.18198e-01, -5.85956e-01,  4.27080e+00, -6.48897e+00,  0.0,
+   1.0, -(1.0 - 0.636158), 0.3
 };
 
 static void
@@ -177,3 +193,36 @@ const xc_func_info_type xc_func_info_hyb_gga_xc_wb97x_d3 = {
   gga_xc_wb97_init, NULL,
   NULL, &work_gga, NULL
 };
+
+#ifdef __cplusplus
+extern "C"
+#endif
+const xc_func_info_type xc_func_info_hyb_gga_xc_wb97x_2tqz = {
+  XC_HYB_GGA_XC_WB97X_2TQZ, 
+  XC_EXCHANGE_CORRELATION,
+  "wB97X-2(TQZ) range-separated functional",
+  XC_FAMILY_GGA,
+  {&xc_ref_Chai2009_174105, NULL, NULL, NULL, NULL},
+  XC_FLAGS_3D | MAPLE2C_FLAGS,
+  1e-14,
+  {N_PAR, names, desc, par_wb97x_2tqz, set_ext_params_cpy_cam},
+  gga_xc_wb97_init, NULL,
+  NULL, &work_gga, NULL
+};
+
+#ifdef __cplusplus
+extern "C"
+#endif
+const xc_func_info_type xc_func_info_hyb_gga_xc_wb97x_2lp = {
+  XC_HYB_GGA_XC_WB97X_2LP, 
+  XC_EXCHANGE_CORRELATION,
+  "wB97X-2(LP) range-separated functional",
+  XC_FAMILY_GGA,
+  {&xc_ref_Chai2009_174105, NULL, NULL, NULL, NULL},
+  XC_FLAGS_3D | MAPLE2C_FLAGS,
+  1e-14,
+  {N_PAR, names, desc, par_wb97x_2lp, set_ext_params_cpy_cam},
+  gga_xc_wb97_init, NULL,
+  NULL, &work_gga, NULL
+};
+

@@ -80,6 +80,7 @@ extern func_reference_type xc_ref_Chachiyo2020_112669;
 extern func_reference_type xc_ref_Chachiyo2020_3485;
 extern func_reference_type xc_ref_Chai2008_084106;
 extern func_reference_type xc_ref_Chai2008_6615;
+extern func_reference_type xc_ref_Chai2009_174105;
 extern func_reference_type xc_ref_Chai2012_121;
 extern func_reference_type xc_ref_Chen2018_073803;
 extern func_reference_type xc_ref_Chiodo2012_126402;

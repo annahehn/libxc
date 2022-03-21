@@ -415,6 +415,12 @@ func_reference_type xc_ref_Chai2008_6615 = {
   "@article{Chai2008_6615,\n  author = {Chai, Jeng-Da and Head-Gordon, Martin},\n  title = {Long-range corrected hybrid density functionals with damped atom-atom dispersion corrections},\n  journal = {Phys. Chem. Chem. Phys.},\n  publisher = {The Royal Society of Chemistry},\n  year = {2008},\n  volume = {10},\n  issue = {44},\n  pages = {6615-6620},\n  doi = {10.1039/B810189B},\n  url = {https://doi.org/10.1039/B810189B}\n}\n"
 };
 
+func_reference_type xc_ref_Chai2009_174105 = {
+  "J.-D. Chai and M. Head-Gordon, J. Chem. Phys. 131, 174105 (2009)",
+  "10.1039/B810189B",
+  "@article{Chai2009_174105,\n  author = \"Chai, Jeng-Da and Head-Gordon, Martin\",\n  title = \"Long-range corrected hybrid density functionals with damped atom-atom dispersion corrections\",\n  journal = \"J. Chem. Phys.\",\n  publisher = \"The Royal Society of Chemistry\",\n  year = \"2009\",\n  volume = \"131\",\n  issue = \"17\",\n  pages = \"174105\",\n  doi = \"10.1063/1.3244209\",\n  url = \"https://aip.scitation.org/doi/10.1063/1.3244209\"\n}"
+};
+
 func_reference_type xc_ref_Chai2012_121 = {
   "J.-D. Chai and S.-P. Mao.,  Chem. Phys. Lett. 538, 121-125 (2012)",
   "10.1016/j.cplett.2012.04.045",

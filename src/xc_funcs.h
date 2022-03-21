@@ -395,6 +395,8 @@
 #define  XC_HYB_GGA_XC_WB97X               464 /* wB97X range-separated functional */
 #define  XC_HYB_GGA_XC_LRC_WPBEH           465 /* Long-range corrected short-range hybrid PBE (LRC-wPBEh) by Rohrdanz| Martins and Herbert */
 #define  XC_HYB_GGA_XC_WB97X_V             466 /* wB97X-V range-separated functional */
+#define  XC_HYB_GGA_XC_WB97X_2LP           725 /* wB97X-2(LP) double hybrid functional */
+#define  XC_HYB_GGA_XC_WB97X_2TQZ          726 /* wB97X-2(TQZ) double hybrid functional */
 #define  XC_HYB_GGA_XC_LCY_PBE             467 /* LCY version of PBE */
 #define  XC_HYB_GGA_XC_LCY_BLYP            468 /* LCY version of BLYP */
 #define  XC_HYB_GGA_XC_LC_VV10             469 /* Vydrov and Van Voorhis */

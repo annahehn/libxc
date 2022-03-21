@@ -1189,6 +1189,12 @@
  ! wB97X-V range-separated functional
  integer(c_int), parameter, public :: XC_HYB_GGA_XC_WB97X_V  =    466
 
+ ! wB97X-2(LP) double hybrid functional
+ integer(c_int), parameter, public :: XC_HYB_GGA_XC_WB97X_2LP  =    725
+
+ ! wB97X-2(TQZ) double hybrid functional
+ integer(c_int), parameter, public :: XC_HYB_GGA_XC_WB97X_2TQZ  =    726
+
  ! LCY version of PBE
  integer(c_int), parameter, public :: XC_HYB_GGA_XC_LCY_PBE  =    467
 

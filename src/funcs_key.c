@@ -398,6 +398,8 @@ xc_functional_key_t xc_functional_keys[] = {
   {"hyb_gga_xc_wb97x", 464},
   {"hyb_gga_xc_lrc_wpbeh", 465},
   {"hyb_gga_xc_wb97x_v", 466},
+  {"hyb_gga_xc_wb97x_2lp", 725},
+  {"hyb_gga_xc_wb97x_2tqz", 726},
   {"hyb_gga_xc_lcy_pbe", 467},
   {"hyb_gga_xc_lcy_blyp", 468},
   {"hyb_gga_xc_lc_vv10", 469},
